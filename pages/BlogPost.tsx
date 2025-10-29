@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { BLOG_POSTS } from '../constants';
@@ -47,10 +46,10 @@ const BlogPost: React.FC = () => {
       </article>
 
       <div className="text-center mt-20 bg-white/60 p-12 rounded-2xl max-w-3xl mx-auto shadow-sm">
-        <h3 className="text-2xl font-['Lora'] font-bold text-slate-800">Start your gentle healing journey</h3>
-        <p className="mt-4 text-slate-600">Get lifetime access to guided journals, mindfulness exercises, and printable affirmation cards.</p>
+        <h3 className="text-2xl font-['Lora'] font-bold text-slate-800">You are not alone on this journey</h3>
+        <p className="mt-4 text-slate-600">Join our community to receive gentle, supportive notes and your free ‘Calm Mom Sleep Journal’.</p>
         <div className="mt-8">
-            <Button to="/program">Discover The MaternEase Program</Button>
+            <Button to="/contact">Join Our Community</Button>
         </div>
       </div>
     </div>

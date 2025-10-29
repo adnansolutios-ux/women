@@ -6,11 +6,12 @@ interface ButtonProps {
   children: React.ReactNode;
   onClick?: () => void;
   to?: string;
+  href?: string;
   className?: string;
   type?: 'button' | 'submit' | 'reset';
 }
 
-const Button: React.FC<ButtonProps> = ({ children, onClick, to, className = '', type = 'button' }) => {
+const Button: React.FC<ButtonProps> = ({ children, onClick, to, href, className = '', type = 'button' }) => {
   const styles = `
     inline-block bg-[#D8BFD8] text-white font-semibold 
     py-3 px-8 rounded-full shadow-md 
@@ -20,6 +21,14 @@ const Button: React.FC<ButtonProps> = ({ children, onClick, to, className = '', 
     transform hover:-translate-y-0.5
     ${className}
   `;
+
+  if (href) {
+    return (
+      <a href={href} target="_blank" rel="noopener noreferrer" className={styles}>
+        {children}
+      </a>
+    );
+  }
 
   if (to) {
     return (

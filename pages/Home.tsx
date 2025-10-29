@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Button from '../components/Button';
 import TestimonialCard from '../components/TestimonialCard';
@@ -13,10 +12,10 @@ const Home: React.FC = () => {
           Find calm and healing after birth.
         </h1>
         <p className="mt-6 max-w-2xl mx-auto text-lg md:text-xl text-slate-600">
-          Gentle guidance and printable tools to help you feel peaceful, confident, and connected to your baby.
+          A soft space for new mothers to find gentle guidance, support, and resources for the journey ahead.
         </p>
         <div className="mt-10">
-          <Button to="/program">Discover the MaternEase Program</Button>
+          <Button to="/contact">Join Our Community</Button>
         </div>
       </section>
 
